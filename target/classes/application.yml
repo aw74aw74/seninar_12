@@ -1,0 +1,21 @@
+# Конфигурация Spring приложения
+spring:
+  # Основные настройки приложения
+  application:
+    name: seminar_12
+
+  # Настройки шаблонизатора Thymeleaf
+  thymeleaf:
+    cache: false
+    encoding: UTF-8
+    mode: HTML
+    servlet:
+      content-type: text/html
+
+# Настройки встроенного сервера
+server:
+  port: 8080
+  
+  # Настройки обработки ошибок
+  error:
+    include-message: always

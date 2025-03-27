@@ -1,0 +1,87 @@
+/* ==============================================
+   Стили для навигационных ссылок
+   ============================================== */
+.nav-links a {
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+    color: #0066cc;
+}
+
+.nav-links a:hover {
+    color: #003366;
+    text-decoration: underline;
+}
+
+/* ==============================================
+   Стили для формы регистрации
+   ============================================== */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 8px;
+    width: 200px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* ==============================================
+   Стили для отображения информации о пользователе
+   ============================================== */
+.user-info {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-row {
+    margin: 10px 0;
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.info-row:last-child {
+    border-bottom: none;
+}
+
+.label {
+    font-weight: bold;
+    color: #333;
+    margin-right: 10px;
+    display: inline-block;
+    width: 100px;
+}
+
+/* ==============================================
+   Общие стили
+   ============================================== */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+h1, h2 {
+    color: #333;
+    margin-bottom:
+}

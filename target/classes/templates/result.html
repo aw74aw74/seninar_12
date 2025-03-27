@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Результат регистрации</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+    <h2>Регистрация успешна!</h2>
+    
+    <div class="user-info">
+        <div class="info-row">
+            <span class="label">Имя:</span>
+            <span th:text="${user.firstName}"></span>
+        </div>
+        
+        <div class="info-row">
+            <span class="label">Фамилия:</span>
+            <span th:text="${user.lastName}"></span>
+        </div>
+        
+        <div class="info-row">
+            <span class="label">Email:</span>
+            <span th:text="${user.email}"></span>
+        </div>
+    </div>
+
+    <div class="nav-links">
+        <a href="/">На главную</a>
+        <a href="/greeting">К форме приветствия</a>
+        <a href="/register">К форме регистрации</a>
+    </div>
+</body>
+</html>

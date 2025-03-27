@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Приветствие</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+    <h1 th:text="'Привет, ' + ${name} + '!'" />
+    <div class="nav-links">
+        <a href="/">На главную</a>
+        <a href="/register">К форме регистрации</a>
+    </div>
+</body>
+</html>

@@ -84,6 +84,21 @@ src/
    Новый юзер добавлен с IP: 192.168.1.100 : User{name='John'} : 2025-03-28T02:35:40
    ```
 
+## Используемые паттерны
+
+1. **Gateway** - `RequestLoggingService` как единая точка входа для логирования
+
+2. **Chain of Responsibility** - последовательная обработка сообщений через каналы:
+   ```
+   requestChannel → transformer → fileChannel → fileWriter
+   ```
+
+3. **Observer** - реализован через механизм каналов Spring Integration
+
+4. **Dependency Injection** - внедрение зависимостей через конструктор с помощью Lombok `@RequiredArgsConstructor`
+
+5. **Facade** - `HomeController` скрывает сложность системы логирования за простым интерфейсом
+
 ## Процесс логирования
 
 1. **Получение запроса**
